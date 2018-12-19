@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: JT4MIOV60Kl0tSQJA8lkzMsciGPTL1W1/j5C3jSeYA5ibz+PjE4coj41S01M5jdIGVs/DrL7JZVN0Y4vbkvAbVyhds2wOCpAjMag6MJmFQS9ogl84lEVSpUxk9QZaD/LND7cRJqIgUvzMpVkbdDwAYbLt85akmGjPIjPzdOxKfjOkJIo9VU+/jB1THxtLWLaITzVtj94wk7VFZelcpyBZbYbebsjPQfL6x+5We2N7Ri4X7oeF6B4Yjb43w6eZ28PMmt4zvwDbcZg4Qq3dhDu0Ow5O9YkcGca+9B2Md81c9dUl21AA8rZgGBVb4YNWhgPTuuaKbPgVRi5XP/F2WFYISjf3BjNNyG0meW1Wv+IuRmfvSTHVg87HJtcUJLrkwfPwfCl/Tv7CRNYk7uBQuHlP6k3AeBVtFWDC3GxARyYRJf6UQn4E8FH0My5xUiGVZ9kKOiLARfaQE2wDm7p6A/AuKM0EbLfJMMXq4JVxq1Z1sSpRoDoZlvGEsCRlj6qPcXKGFOhkzZ4OUAjYJX4L3ZcSqFMH/gvwHDsf+P5ZoZDfMMWIrtFPBw5avmM1wxFDE8N64cO0VfkPolQvCz9BRS+tZK+1ih8CLEp+ZOIhyCzMk68dN68ZtMfuiIpi9aemb1MJqohOP/oDr+wecHPpIUPXb0sgeQdOBGbOUZ0Ey6JWnE=
+  app: peaceful-meadow-51426
+  on:
+    repo: SanDiegoCasey/HotOrColdTest
